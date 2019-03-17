@@ -9,7 +9,7 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="container" style="background-color:#3cb371;">
+		<div class="jumbotron text-center" style="background-color:#3cb371;">
 			<img src="assets/images/pea-logo.png" class="rounded" alt="Cinque Terre">
 			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
 		</div>
