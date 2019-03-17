@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="jumbotron text-center" style="background-color:#3cb371;">
-			<img src="assets/images/pea-logo.jpg" class="rounded" alt="Cinque Terre">
+			<img src="assets/images/pea-logo.png" class="rounded" alt="Cinque Terre">
 			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
 			<p>Green Office Pea Photaram....</p> 
 		</div>  
