@@ -11,16 +11,10 @@
 	<body>
 		<nav class="shadow-sm navbar fixed-top navbar-light bg-white">
 			<!-- Brand/logo -->
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand font-weight-bold" href="#!">
 				<img src="assets/images/pea-logo.png" alt="logo" style="width:100px;">
+				โปรแกรมประชาสัมพันธ์ข่าวสารโครงการสำนักงานสีเขียว
 			</a>
-  
-			<!-- Links -->
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Link 1</a>
-				</li>
-			</ul>
 		</nav>
 		<div class="container mt-2">
 			<div class="row row-center">
