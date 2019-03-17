@@ -30,11 +30,32 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h3>Column 1</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+						<table class="table">
+							<thead class="thead-light">
+							  <tr>
+								<th>หัวข้อประชาสัมพันธ์</th>
+								<th>การแจ้งเตือน</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>John</td>
+								<td>Doe</td>
+								
+							  </tr>
+							  <tr>
+								<td>Mary</td>
+								<td>Moe</td>
+								
+							  </tr>
+							  <tr>
+								<td>July</td>
+								<td>Dooley</td>
+								
+							  </tr>
+							</tbody>
+					  </table>
 					</div>
-					
 				</div>
 			</div>
 		</main>
