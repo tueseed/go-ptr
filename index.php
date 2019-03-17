@@ -9,7 +9,7 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm">
+		<nav class="shadow-sm navbar fixed-top navbar-light bg-white">
 			<!-- Brand/logo -->
 			<a class="navbar-brand" href="#">
 				<img src="assets/images/pea-logo.png" alt="logo" style="width:100px;">
