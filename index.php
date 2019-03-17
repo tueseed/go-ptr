@@ -9,13 +9,15 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<nav class="shadow-sm navbar fixed-top navbar-light bg-white">
-			<!-- Brand/logo -->
-			<a class="navbar-brand font-weight-bold" href="#!">
-				<img src="assets/images/pea-logo.png" alt="logo" style="width:100px;">
-				โปรแกรมประชาสัมพันธ์ข่าวสารโครงการสำนักงานสีเขียว
-			</a>
-		</nav>
+		<div class="container">
+			<nav class="shadow-sm navbar fixed-top navbar-light bg-white">
+				<!-- Brand/logo -->
+				<a class="navbar-brand font-weight-bold" href="#!">
+					<img src="assets/images/pea-logo.png" alt="logo" style="width:100px;">
+					โปรแกรมประชาสัมพันธ์ข่าวสารโครงการสำนักงานสีเขียว
+				</a>
+			</nav>
+		</div>
 		<div class="container mt-2">
 			<div class="row row-center">
 				<div class="col-lg-12">
