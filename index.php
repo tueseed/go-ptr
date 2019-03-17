@@ -8,7 +8,7 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="jumbotron text-center">
+		<div class="jumbotron text-center" style="background-color:#3cb371;">
 			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
 			<p>Green Office Pea Photaram....</p> 
 		</div>  
