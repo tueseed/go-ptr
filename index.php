@@ -9,7 +9,7 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="container">
+		<header style="margin-bottom: 70px;">
 			<nav class="shadow-sm navbar fixed-top navbar-light bg-white">
 				<!-- Brand/logo -->
 				<a class="navbar-brand font-weight-bold" href="#!">
@@ -17,23 +17,25 @@
 					โปรแกรมประชาสัมพันธ์ข่าวสารโครงการสำนักงานสีเขียว
 				</a>
 			</nav>
-		</div>
-		<div class="container mt-2">
-			<div class="row row-center">
-				<div class="col-lg-12">
-					<button type="button" class="btn btn-primary">เพิ่มข้อมูล</button>
+		</header>
+		<main>
+			<div class="container mt-2">
+				<div class="row row-center">
+					<div class="col-lg-12">
+						<button type="button" class="btn btn-primary">เพิ่มข้อมูล</button>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h3>Column 1</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>Column 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+					</div>
+					
 				</div>
-				
 			</div>
-		</div>
+		</main>
 	</body>
 </html>
