@@ -3,6 +3,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/cus.css">
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/popper.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
@@ -13,7 +14,7 @@
 			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row row-center">
 				<div class="col-lg-12">
 					<button type="button" class="btn btn-primary">เพิ่มข้อมูล</button>
 				</div>
