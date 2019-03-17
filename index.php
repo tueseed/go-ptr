@@ -11,25 +11,22 @@
 		<div class="jumbotron text-center" style="background-color:#3cb371;">
 			<img src="assets/images/pea-logo.png" class="rounded" alt="Cinque Terre">
 			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
-			<p>Green Office Pea Photaram....</p> 
-		</div>  
+		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-lg-12">
+					<button type="button" class="btn btn-primary">เพิ่มข้อมูล</button>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
 					<h3>Column 1</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
 					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
 				</div>
-				<div class="col-sm-4">
-				  <h3>Column 2</h3>
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-				</div>
-				<div class="col-sm-4">
-				  <h3>Column 3</h3>        
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-				  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-				</div>
+				
 			</div>
 		</div>
 	</body>
