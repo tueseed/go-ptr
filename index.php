@@ -9,10 +9,25 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div class="jumbotron text-center" style="background-color:#3cb371;">
-			<img src="assets/images/pea-logo.png" class="rounded" alt="Cinque Terre">
-			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
-		</div>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="bird.jpg" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+</nav>
 		<div class="container">
 			<div class="row row-center">
 				<div class="col-lg-12">
