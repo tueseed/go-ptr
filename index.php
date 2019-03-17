@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<div class="jumbotron text-center">
-			<h2>My First Bootstrap Page</h2>
-			<p>Resize this responsive page to see the effect!</p> 
+			<h2>ประชาสัมพันข่าวสารกรีนออฟฟิต</h2>
+			<p>Green Office Pea Photaram....</p> 
 		</div>  
 		<div class="container">
 			<div class="row">
