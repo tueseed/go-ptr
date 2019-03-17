@@ -31,35 +31,21 @@
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">เพิ่มข้อมูลยานพาหนะ</h4>
+								<h4 class="modal-title">เพิ่มข่าวสาร</h4>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
 								<div class="row">
 									<div class="col-lg-6">
 										<div class="form-group">
-											<label for="car_num">หมายเลขทะเบียน</label>
+											<label for="car_num">หัวข้อข่าวสาร</label>
 											<input class="form-control" type="text" name="car_num" id="car_num" required />
 										</div>
 									</div>
 									<div class="col-lg-6">
 										<div class="form-group">
-											<label for="car_type">ประเภทรถ</label>
+											<label for="car_type">รายละเอียด</label>
 											<input class="form-control" type="text" name="car_type" id="car_type" required>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="form-group">
-											<label for="brand">ยี่ห้อ</label>
-											<input class="form-control" type="text" name="brand" id="brand" required >
-										</div>
-									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<label for="fuel">น้ำมันเชื้อเพลิง</label>
-											<input class="form-control" type="text" name="fuel" id="fuel" required >
 										</div>
 									</div>
 								</div>
