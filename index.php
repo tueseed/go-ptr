@@ -9,26 +9,26 @@
 		<script src="assets/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">
-    <img src="bird.jpg" alt="logo" style="width:40px;">
-  </a>
+		<nav class="navbar navbar-expand-sm">
+			<!-- Brand/logo -->
+			<a class="navbar-brand" href="#">
+				<img src="assets/images/pea-logo.png" alt="logo" style="width:40px;">
+			</a>
   
-  <!-- Links -->
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-  </ul>
-</nav>
-		<div class="container">
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link 1</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Link 2</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Link 3</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container mt-2">
 			<div class="row row-center">
 				<div class="col-lg-12">
 					<button type="button" class="btn btn-primary">เพิ่มข้อมูล</button>
