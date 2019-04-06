@@ -1,9 +1,28 @@
 <?php
+	function flex_msg()
+	{
+			$json1 = '{
+						"type":"flex",
+						"altText":"Green Office",
+						"contents":{
+									"type": "bubble",
+									"hero": {
+												"type": "image",
+												"url": "https://go-ptr.herokuapp.com/images/3-R.jpg",
+												"size": "full",
+												"aspectRatio": "20:13",
+												"aspectMode": "cover"
+											}
+									}';
+		$result = json_decode($json1);
+		return $result;
+	}
 	function push($group_id,$text_alert)
 	{
 		$access_token = 'pwo0kxwpp2MFook0bX8Gr+XR+cOuT5/4mCU2aKFMa5ML5V9PDZAAqaRS5uyPGBC4DS2lkzekn1nT8OBpjE8HPNQqXJm6mBcixaVfmtLm08N1kug5XMgHL4CZAaKXSyOUZumGYOnEOjw7VSx0llzYtgdB04t89/1O/w1cDnyilFU=';
-		$messages = [ 'type' => 'text','text' => $text_alert];
-        $url = 'https://api.line.me/v2/bot/message/push';
+		//$messages = [ 'type' => 'text','text' => $text_alert];
+		$messages = flex_msg();
+		$url = 'https://api.line.me/v2/bot/message/push';
         $data = ['to' => $group_id,'messages' => [$messages]];
         $post = json_encode($data);
         $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
