@@ -1,66 +1,10 @@
 <?php
-	function flex_msg()
+	function push($group_id,$text_alert)
 	{
-			$json1 = '{
-						"type":"flex",
-						"altText":"Green Office",
-						"contents":{
-									"type": "bubble",
-									"header": {
-												"type": "box",
-												"layout": "horizontal",
-												"contents": [
-																{
-																	"type": "text",
-																	"text": "ประชาสัมพันธ์",
-																	"weight": "bold",
-																	"color": "#B7F4A9",
-																	"align": "center",
-																	"size": "md"
-																}
-															]
-											  },
-									"hero": {
-												"type": "image",
-												"url": "https://meetingnotify.herokuapp.com/pic/the-assist.png",
-												"size": "full",
-												"aspectRatio": "20:13",
-												"aspectMode": "cover"
-											},
-									
-									"footer": {
-												"type": "box",
-												"layout": "vertical",
-												"contents": [
-																{
-																	"type": "spacer",
-																	"size": "xs"
-																},
-																{
-																	"type": "button",
-																	"style": "primary",
-																	"color": "#B7F4A9",
-																	"action": {
-																				"type": "uri",
-																				"label": "รายละเอียด",
-																				"uri": "https://linecorp.com"
-																				}
-																}
-															]
-										}		
-								}
-						}';
-		$result = json_decode($json1);
-		return $result;
-	}
-	function push()
-	{
-		$access_token = 'HScoQtJ9WeTsUePpz0xZ7vo//Tm7j+PR/LCoi09r4L7XDPJVZr/Bc3iSn6NGBJVa8LpQM446o/uIUbLxOfjm09FDX+73peOuXqHvKttcHLeqogyWj0RU/Vqj1LapFoxfp2lOPYq4O8ErqPnZGyRpPAdB04t89/1O/w1cDnyilFU=';
-        $id = 'Ua9ba6c25071c19588c095ec147efe2b1';
-		//$messages = [ 'type' => 'text','text' => "jdakljkskljd"];
-		$messages = flex_msg();
+		$access_token = 'pwo0kxwpp2MFook0bX8Gr+XR+cOuT5/4mCU2aKFMa5ML5V9PDZAAqaRS5uyPGBC4DS2lkzekn1nT8OBpjE8HPNQqXJm6mBcixaVfmtLm08N1kug5XMgHL4CZAaKXSyOUZumGYOnEOjw7VSx0llzYtgdB04t89/1O/w1cDnyilFU=';
+		$messages = [ 'type' => 'text','text' => $text_alert];
         $url = 'https://api.line.me/v2/bot/message/push';
-        $data = ['to' => $id,'messages' => [$messages]];
+        $data = ['to' => $group_id,'messages' => [$messages]];
         $post = json_encode($data);
         $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
         $ch = curl_init($url);
@@ -72,6 +16,14 @@
         $result = curl_exec($ch);
         curl_close($ch); 
 	}
-	push();
+	
+	require('db/connect-db.php');
+	$text_alert = "ปรับอุณหภูมิเครื่องปรับอากาศที่ 25 องศา จะทำให้ประหยัดไฟฟ้าได้ รู้ป่ะเนี่ย";
+	$sql_select_group = "SELECT group_id FROM tbl_group";
+	$query_group = mysqli_query($conn,$sql_select_group);
+	while($obj_result = mysqli_fetch_assoc($query_group))
+	{
+		push($obj_result["group_id"],$text_alert);
+	}
 	echo "OK.....นะคะ";
 ?>
