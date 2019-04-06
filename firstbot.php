@@ -34,6 +34,7 @@
 				$txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
 				if($source_type == "group" )
 				{
+					require('db/connect-db.php');
 					$text_back = $event['source']['groupId'];
 				}
 				reply_msg($text_back,$replyToken);      
