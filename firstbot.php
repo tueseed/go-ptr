@@ -32,12 +32,16 @@
 				$replyToken = $event['replyToken']; //เก็บ reply token เอาไว้ตอบกลับ
 				$source_type = $event['source']['type'];//เก็บที่มาของ event(user หรือ group)
 				$txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				if($source_type == "group" )
+				$check_cmd = substr($txtin,0,4); 
+				if($source_type == "group" AND $check_cmd == "#001" )
 				{
+					$group_name = trim(substr($txtin,4,strlen($txtin)));
+					$groupID = $event['source']['groupId'];
 					require('db/connect-db.php');
-					$text_back = $event['source']['groupId'];
+					$sql_insert_groupID ="INSERT INTO tbl_group(group_id,group_name) VALUE('$groupID','$group_name')";
+					mysqli_query($conn,$sql_insert_groupID);
 				}
-				reply_msg($text_back,$replyToken);      
+				reply_msg('เพิ่มกลุ่มแล้ว',$replyToken);      
 			}
 		}
 	}
