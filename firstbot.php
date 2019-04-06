@@ -32,7 +32,7 @@
 				$replyToken = $event['replyToken']; //เก็บ reply token เอาไว้ตอบกลับ
 				$source_type = $event['source']['type'];//เก็บที่มาของ event(user หรือ group)
 				$txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				if($source_type == "group")
+				if($source_type == "group" )
 				{
 					$text_back = $event['source']['groupId'];
 				}
