@@ -1,7 +1,7 @@
 <?php
 	function flex_msg()
 	{
-			$json1 = '{
+			/*$json1 = '{
 							"type":"flex",
 							"altText":"Green Office",
 							"contents":{
@@ -14,6 +14,35 @@
 													"aspectMode": "cover"
 												}
 									}		
+						}';*/
+				$json1 = '{
+							"type":"flex",
+							"altText":"Green Office",
+							"contents":{
+											"type":"carousel",
+											"content":{
+														{
+															"type": "bubble",
+															"hero": {
+																		"type": "image",
+																		"url": "https://go-ptr.herokuapp.com/images/3-R.jpg",
+																		"size": "full",
+																		"aspectRatio": "20:13",
+																		"aspectMode": "cover"
+																	}
+														},
+														{
+															"type": "bubble",
+															"hero": {
+																		"type": "image",
+																		"url": "https://go-ptr.herokuapp.com/images/3-R.jpg",
+																		"size": "full",
+																		"aspectRatio": "20:13",
+																		"aspectMode": "cover"
+																	}
+														}
+													  }	
+										}
 						}';
 		$result = json_decode($json1);
 		return $result;
