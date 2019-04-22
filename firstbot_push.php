@@ -20,7 +20,7 @@
 							"altText":"Green Office",
 							"contents":{
 											"type":"carousel",
-											"content":[
+											"contents":[
 														{
 															"type": "bubble",
 															"hero": {
