@@ -20,7 +20,7 @@
 							"altText":"Green Office",
 							"contents":{
 											"type":"carousel",
-											"content":{
+											"content":[
 														{
 															"type": "bubble",
 															"hero": {
@@ -41,7 +41,7 @@
 																		"aspectMode": "cover"
 																	}
 														}
-													  }	
+													  ]	
 										}
 						}';
 		$result = json_decode($json1);
