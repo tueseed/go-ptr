@@ -23,29 +23,32 @@
 			<div class="container mt-2">
 				<div class="row row-center">
 					<div class="col-lg-12">
-						<button type="button" class="btn btn-primary" data-toggle="modal" href="#addtopic">เพิ่มข้อมูล</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" href="#addtopic">เพิ่มข้อมูลการแจ้งเตือน</button>
 					</div>
 				</div>
 			</div>
+			<!--Modal-->
 			<div class="modal fade" id="addtopic" role="dialog">
 				<div class="modal-dialog modal-lg">
 					<div class="modal-content">
 							<div class="modal-header">
-								<h4 class="modal-title">เพิ่มข่าวสาร</h4>
+								<h4 class="modal-title">เพิ่มข้อมูลการแจ้งเตือน</h4>
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
 								<div class="row">
-									<div class="col-lg-6">
+									<div class="col-lg-12">
 										<div class="form-group">
-											<label for="car_num">หัวข้อข่าวสาร</label>
-											<input class="form-control" type="text" name="car_num" id="car_num" required />
+											<label for="car_num">เรื่อง</label>
+											<input class="form-control" type="text" name="topic" id="topic" required />
 										</div>
 									</div>
-									<div class="col-lg-6">
-										<div class="form-group">
-											<label for="car_type">รายละเอียด</label>
-											<input class="form-control" type="text" name="car_type" id="car_type" required>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<div class="custom-file">
+											<input type="file" class="custom-file-input" id="customFile">
+											<label class="custom-file-label" for="customFile">Choose file</label>
 										</div>
 									</div>
 								</div>
@@ -56,6 +59,7 @@
 					</div>
 				</div>
 			</div>
+			<!--จบ Modal-->
 			<div class="container mt-2">
 				<div class="row">
 					<div class="col-lg-12">
