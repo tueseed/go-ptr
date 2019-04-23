@@ -6,9 +6,7 @@
     move_uploaded_file( $_FILES["images"]["tmp_name"][$key], "uploads/" . $_FILES['images']['name'][$key]);
   }
 }*/
-$filename  = $_FILES['images']['name'];
-$ext = pathinfo($filename,PATHINFO_EXTENSION);
-$target_path = "./images/". basename($_FILES['images']['name']).".".$ext;
-$result = @move_uploaded_file( $_FILES['images']['tmp_name'], $target_path);
+$target_path = "./images/{$_FILES['images']['name']}";
+$result = move_uploaded_file( $_FILES['images']['tmp_name'], $target_path);
 $file = $_FILES["images"]["name"];
-echo "<h2>".$file."</h2>";
+echo "<img src='$target_path'/>";
