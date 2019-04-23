@@ -6,6 +6,6 @@
     move_uploaded_file( $_FILES["images"]["tmp_name"][$key], "uploads/" . $_FILES['images']['name'][$key]);
   }
 }*/
-$file = $_FILES["images"]["name"][0];
+$file = $_FILES["images"]["name"];
  
 echo "<h2>".$file."</h2>";
