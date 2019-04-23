@@ -2,7 +2,7 @@ function upload()
 {
     var formdata = new FormData();
     var picture = document.getElementById("picture_file");
-    formdata.append("images[]", picture);
+    formdata.append("images", picture);
     /*
     $.ajax({
         url: "upload.php",
@@ -14,5 +14,5 @@ function upload()
           document.getElementById("response").innerHTML = res; 
         }
       });*/
-      alert(formdata);
+      alert(formdata.images);
 }
