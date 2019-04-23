@@ -10,5 +10,5 @@ $filename  = $_FILES['images']['name'];
 $ext = pathinfo($filename,PATHINFO_EXTENSION);
 $target_path = "./images/". basename($_FILES['images']['name']).".".$ext;
 $result = @move_uploaded_file( $_FILES['images']['tmp_name'], $target_path);
-$file = $_FILES["images"]["tmp_name"];
+$file = $_FILES["images"]["name"];
 echo "<h2>".$file."</h2>";
