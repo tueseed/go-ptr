@@ -47,8 +47,8 @@
 								<div class="row">
 									<div class="col-lg-12">
 										<div class="custom-file">
-											<input type="file" class="custom-file-input" id="customFile">
-											<label class="custom-file-label" for="customFile">Choose file</label>
+											<input type="file" class="custom-file-input" id="picture_file">
+											<label class="custom-file-label" for="customFile">ไฟล์รูปภาพ</label>
 										</div>
 									</div>
 								</div>
@@ -92,5 +92,12 @@
 				</div>
 			</div>
 		</main>
+		<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
 	</body>
 </html>
