@@ -54,7 +54,7 @@
 								</div>
 							</div>
 							<div class="modal-footer">
-								<button type="submit" class="btn btn-default" onclick="add_car()">ตกลง</button>
+								<button type="submit" class="btn btn-default" onclick="upload()">ตกลง</button>
 							</div>
 					</div>
 				</div>
