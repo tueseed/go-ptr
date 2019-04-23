@@ -1,7 +1,7 @@
 function upload()
 {
     var formdata = new FormData();
-    var picture = document.getElementById("picture_file");
+    var picture = document.getElementById("picture_file").value;
     formdata.append("images", picture);
     /*
     $.ajax({
