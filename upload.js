@@ -2,7 +2,7 @@ function upload()
 {
     var formdata = new FormData();
     var picture = document.getElementById("picture_file");
-    formdata.append("images", picture.files);
+    formdata.append("images", picture.files[0]);
     $.ajax({
         url: "upload.php",
         type: "POST",
@@ -13,6 +13,6 @@ function upload()
          console.log(res); 
         }
       });
-      console.log(picture.files);
+      console.log(picture.files[0]);
       
 }
