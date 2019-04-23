@@ -13,6 +13,6 @@ function upload()
          console.log(res); 
         }
       });
-      console.log(picture);
+      console.log(picture.files);
       
 }
