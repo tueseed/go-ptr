@@ -14,5 +14,5 @@ function upload()
           document.getElementById("response").innerHTML = res; 
         }
       });*/
-      alert(formdata.images);
+      alert(formdata["images"]);
 }
