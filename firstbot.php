@@ -1,5 +1,5 @@
 <?php
-	function rich2($uid)
+	function rich2($uid,$replyToken)
 	{
 		$curl = curl_init();
 		curl_setopt_array($curl, array(
@@ -34,6 +34,7 @@
 		} else {
 		echo $response;
 		}
+		reply_msg($response,$replyToken);
 	}
 
 	function rich3($uid)
@@ -146,7 +147,7 @@
 				$uid = $event['source']['userId'];
 				if($txtin == "rich2")
 				{
-					rich2($uid);
+					rich2($uid,$replyToken);
 				}
 				else if($txtin == "rich3")
 				{
