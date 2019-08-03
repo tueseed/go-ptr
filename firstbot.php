@@ -37,7 +37,7 @@
 		$url = 'https://api.line.me/v2/bot/user/'.$uid.'/richmenu';
 		$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 		$ch = curl_init($url);
-		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, '-d');
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
