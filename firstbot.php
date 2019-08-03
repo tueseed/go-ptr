@@ -1,4 +1,8 @@
 <?php
+	function rich2($uid)
+	{
+
+	}
 	function reply_msg($txtin,$replyToken)//สร้างข้อความและตอบกลับ
 	{
 		$access_token = 'pwo0kxwpp2MFook0bX8Gr+XR+cOuT5/4mCU2aKFMa5ML5V9PDZAAqaRS5uyPGBC4DS2lkzekn1nT8OBpjE8HPNQqXJm6mBcixaVfmtLm08N1kug5XMgHL4CZAaKXSyOUZumGYOnEOjw7VSx0llzYtgdB04t89/1O/w1cDnyilFU=';
@@ -32,8 +36,8 @@
 				$replyToken = $event['replyToken']; //เก็บ reply token เอาไว้ตอบกลับ
 				$source_type = $event['source']['type'];//เก็บที่มาของ event(user หรือ group)
 				$txtin = $event['message']['text'];//เอาข้อความจากไลน์ใส่ตัวแปร $txtin
-				// $uid = $event['message']['userId'];
-				reply_msg($content,$replyToken);
+				 $uid = $event['source']['userId'];
+				reply_msg($uid,$replyToken);
 				
 				      
 			}
