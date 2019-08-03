@@ -9,7 +9,7 @@
 <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
 <script src="./assets/js/bootstrap-table-sticky-header.min.js"></script>
 <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-<script src="./scripts/global.js"></script>
+<!-- <script src="./scripts/global.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script src="./assets/js/Chart.min.js"></script>
 <!-- datepicker -->

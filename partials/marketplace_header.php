@@ -21,8 +21,12 @@
       }
 
       .font-roboto {
-        font-family: 'Roboto';
+      font-family: 'Roboto';
       }
+      img {
+		max-width: 100%;
+		height: auto;
+	}
     </style>
   </head>
 
