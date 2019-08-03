@@ -1,0 +1,71 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "Rich Menu 2",
+  "chatBarText": "Bulletin",
+  "areas": [
+    {
+      "bounds": {
+        "x": 24,
+        "y": 34,
+        "width": 820,
+        "height": 853
+      },
+      "action": {
+        "type": "message",
+        "text": "ช่องทางการสื่อสาร"
+      }
+    },
+    {
+      "bounds": {
+        "x": 872,
+        "y": 34,
+        "width": 793,
+        "height": 827
+      },
+      "action": {
+        "type": "message",
+        "text": "การใช้ถังดับเพลิง"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1684,
+        "y": 30,
+        "width": 795,
+        "height": 827
+      },
+      "action": {
+        "type": "message",
+        "text": "สินต้าที่เป็นมิตรกับสิ่งแวดล้อม"
+      }
+    },
+    {
+      "bounds": {
+        "x": 19,
+        "y": 927,
+        "width": 690,
+        "height": 712
+      },
+      "action": {
+        "type": "message",
+        "text": "rich2"
+      }
+    },
+    {
+      "bounds": {
+        "x": 835,
+        "y": 925,
+        "width": 1605,
+        "height": 671
+      },
+      "action": {
+        "type": "message",
+        "text": "แบบทดสอบ"
+      }
+    }
+  ]
+}

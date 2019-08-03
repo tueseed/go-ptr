@@ -1,0 +1,83 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": false,
+  "name": "Rich Menu 1",
+  "chatBarText": "เมนู",
+  "areas": [
+    {
+      "bounds": {
+        "x": 11,
+        "y": 9,
+        "width": 812,
+        "height": 756
+      },
+      "action": {
+        "type": "message",
+        "text": "การจัดอบรม"
+      }
+    },
+    {
+      "bounds": {
+        "x": 882,
+        "y": 186,
+        "width": 819,
+        "height": 669
+      },
+      "action": {
+        "type": "message",
+        "text": "การจัดประชุม"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1716,
+        "y": 13,
+        "width": 765,
+        "height": 690
+      },
+      "action": {
+        "type": "message",
+        "text": "การแยกขยะและจัดการน้ำเสีย"
+      }
+    },
+    {
+      "bounds": {
+        "x": 30,
+        "y": 934,
+        "width": 737,
+        "height": 739
+      },
+      "action": {
+        "type": "message",
+        "text": "rich1"
+      }
+    },
+    {
+      "bounds": {
+        "x": 863,
+        "y": 893,
+        "width": 834,
+        "height": 729
+      },
+      "action": {
+        "type": "message",
+        "text": "จุดสูบบุหรี่"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1786,
+        "y": 823,
+        "width": 684,
+        "height": 760
+      },
+      "action": {
+        "type": "message",
+        "text": "rich3"
+      }
+    }
+  ]
+}
