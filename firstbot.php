@@ -87,7 +87,7 @@
 				}
 				else if($txtin == "rich3")
 				{
-					rich2($uid);
+					rich3($uid);
 				}
 				else if($txtin == "rich1")
 				{
