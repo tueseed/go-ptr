@@ -57,14 +57,13 @@
 			  							"actions": [
 													{
 														"type": "uri",
-														"label": "รายละเอียด",
+														"label": "Action 1",
 														"uri": "line://app/1561756390-QMx74VGA"
 													}
-											],
 												],
 			  							"thumbnailImageUrl": "https://go-ptr.herokuapp.com/images/classroom.JPG",
-										  "title": "การจัดอบรม",
-										  "text": "การจัดการอบรม กฟอ.โพธาราม"
+			  							"title": "การจัดอบรม",
+			  							"text": "การจัดอบรมของ กฟอ.โพธาราม"
 									}
 		  			}';
 		$mes = json_decode($messages);			  
