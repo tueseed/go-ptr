@@ -45,7 +45,7 @@
 		echo $result . "\r\n";
 	}
 
-	function button($img_url,$liff_url,$replyToken)
+	function button($title,$text,$img_url,$liff_url,$replyToken)
 	{
 		$access_token = 'pwo0kxwpp2MFook0bX8Gr+XR+cOuT5/4mCU2aKFMa5ML5V9PDZAAqaRS5uyPGBC4DS2lkzekn1nT8OBpjE8HPNQqXJm6mBcixaVfmtLm08N1kug5XMgHL4CZAaKXSyOUZumGYOnEOjw7VSx0llzYtgdB04t89/1O/w1cDnyilFU=';
 		// $messages = ['type' => 'text','text' => $txtin];//สร้างตัวแปร 
@@ -63,8 +63,8 @@
 												],
 										  "thumbnailImageUrl": "'.$img_url.'",
 										  "imageAspectRatio": "square",
-			  							"title": "การจัดอบรม",
-			  							"text": "การจัดอบรมของ กฟอ.โพธาราม"
+			  							"title": "'.$title.'",
+			  							"text": "'.$text.'"
 									}
 		  			}';
 		$mes = json_decode($messages);			  
@@ -188,15 +188,15 @@
 					$liff_url = 'line://app/1561756390-QMx74VGA';
 					$title ='การจัดการอบรม';
 					$text = 'การจัดการอบรมของ กฟอ.โพธาราม';
-					button($img_url,$liff_url,$replyToken);
+					button($title,$text,$img_url,$liff_url,$replyToken);
 				}
 				else if($txtin == "การจัดประชุม")
 				{
 					$img_url = 'https://go-ptr.herokuapp.com/images/meet.JPG';
 					$liff_url = 'line://app/1561756390-K2k35Zol';
-						$title ='การจัดประชุม';
+					$title ='การจัดประชุม';
 					$text = 'การจัดประชุมของ กฟอ.โพธาราม';
-					button($img_url,$liff_url,$replyToken);
+					button($title,$text,$img_url,$liff_url,$replyToken);
 				}
 				// reply_msg($uid,$replyToken);      
 			}
