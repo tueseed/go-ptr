@@ -7,7 +7,7 @@
 		// $messages = ['type' => 'text','text' => $txtin];//สร้างตัวแปร 
 		$messages = '{
 						"type": "imagemap",
-						"baseUrl": "https://go-ptr.herokuapp.com/images/classroom1.JPG",
+						"baseUrl": "https://go-ptr.herokuapp.com/images/700/classroom1.jpg",
 						"altText": "This is an imagemap",
 						"baseSize": {
 										"width": 1040,
