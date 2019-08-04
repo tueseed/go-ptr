@@ -192,11 +192,15 @@
 				}
 				else if($txtin == "การจัดประชุม")
 				{
-					$img_url = 'https://go-ptr.herokuapp.com/images/classroom.JPG';
+					$img_url = 'https://go-ptr.herokuapp.com/images/meet.JPG';
 					$liff_url = 'line://app/1561756390-K2k35Zol';
 					$title ='การจัดประชุม';
 					$text = 'การจัดประชุมของ กฟอ.โพธาราม';
 					button($title,$text,$img_url,$liff_url,$replyToken);
+				}
+				else if($txtin == "การแยกขยะและจัดการน้ำเสีย")
+				{
+					
 				}
 				// reply_msg($uid,$replyToken);      
 			}
