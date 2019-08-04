@@ -10,17 +10,17 @@
 						"baseUrl": "https://go-ptr.herokuapp.com/images/classroom1.jpg/460",
 						"altText": "This is an imagemap",
 						"baseSize": {
-										"width": 1040,
-										"height": 1040
+										"width": 460,
+										"height": 460
 									},
 						"actions": [
 			  							{
 											"type": "uri",
 											"area": {
-														"x": 2,
+														"x": 1,
 														"y": 1,
-														"width": 1036,
-														"height": 1033
+														"width": 460,
+														"height": 460
 													},
 											"linkUri": "line://app/1561756390-QMx74VGA"
 			  							}
