@@ -192,7 +192,7 @@
 				}
 				else if($txtin == "การจัดประชุม")
 				{
-					$img_url = 'https://go-ptr.herokuapp.com/images/meet.JPG';
+					$img_url = 'https://go-ptr.herokuapp.com/images/classroom.JPG';
 					$liff_url = 'line://app/1561756390-K2k35Zol';
 					$title ='การจัดประชุม';
 					$text = 'การจัดประชุมของ กฟอ.โพธาราม';
