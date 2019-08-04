@@ -1,7 +1,7 @@
 <?php
 	require("db/connect-db.php");
 
-	function imagemap()
+	function imagemap($replyToken)
 	{
 		$access_token = 'pwo0kxwpp2MFook0bX8Gr+XR+cOuT5/4mCU2aKFMa5ML5V9PDZAAqaRS5uyPGBC4DS2lkzekn1nT8OBpjE8HPNQqXJm6mBcixaVfmtLm08N1kug5XMgHL4CZAaKXSyOUZumGYOnEOjw7VSx0llzYtgdB04t89/1O/w1cDnyilFU=';
 		// $messages = ['type' => 'text','text' => $txtin];//สร้างตัวแปร 
@@ -140,7 +140,7 @@
 				}
 				else if($txtin == "การจัดอบรม")
 				{
-					imagemap();
+					imagemap($replyToken);
 				}
 				// reply_msg($uid,$replyToken);      
 			}
