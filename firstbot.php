@@ -7,20 +7,20 @@
 		// $messages = ['type' => 'text','text' => $txtin];//สร้างตัวแปร 
 		$messages = '{
 						"type": "imagemap",
-						"baseUrl": "https://go-ptr.herokuapp.com/images/classroom1.jpg/460",
+						"baseUrl": "images/classroom1.jpg/460",
 						"altText": "This is an imagemap",
 						"baseSize": {
-										"width": 460,
-										"height": 460
+										"width": 1040,
+										"height": 1040
 									},
 						"actions": [
 			  							{
 											"type": "uri",
 											"area": {
-														"x": 1,
+														"x": 2,
 														"y": 1,
-														"width": 460,
-														"height": 460
+														"width": 1036,
+														"height": 1033
 													},
 											"linkUri": "line://app/1561756390-QMx74VGA"
 			  							}
