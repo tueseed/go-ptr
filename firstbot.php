@@ -57,11 +57,12 @@
 			  							"actions": [
 													{
 														"type": "uri",
-														"label": "Action 1",
+														"label": "รายละเอียด",
 														"uri": "line://app/1561756390-QMx74VGA"
 													}
 												],
-			  							"thumbnailImageUrl": "https://go-ptr.herokuapp.com/images/classroom.JPG",
+										  "thumbnailImageUrl": "https://go-ptr.herokuapp.com/images/classroom.JPG",
+										  "imageAspectRatio": "square",
 			  							"title": "การจัดอบรม",
 			  							"text": "การจัดอบรมของ กฟอ.โพธาราม"
 									}
