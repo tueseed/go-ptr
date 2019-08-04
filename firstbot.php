@@ -215,7 +215,7 @@
 				else if($txtin == "ช่องทางการสื่อสาร")
 				{
 					$img_url = 'https://go-ptr.herokuapp.com/images/commu.jpg';
-					$liff_url = 'line://app/1561756390-l3MPYaBw';
+					$liff_url = 'line://app/1561756390-0GEZOzLx';
 					$title ='ช่องทางการสื่อสาร';
 					$text = 'ช่องทางการสื่อสารของ กฟอ.โพธาราม';
 					button($title,$text,$img_url,$liff_url,$replyToken);
