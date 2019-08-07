@@ -239,7 +239,7 @@
 				else if($txtin == "สินต้าที่เป็นมิตรกับสิ่งแวดล้อม")
 				{
 					$img_url = 'https://go-ptr.herokuapp.com/images/green_product_templete_res.jpg';
-					$liff_url = 'lline://app/1561756390-WPP7pbOG';
+					$liff_url = 'line://app/1561756390-WPP7pbOG';
 					$title ='สินค้าที่เป็นมิตรกับสิ่งแวดล้อม';
 					$text = 'สินค้าที่เป็นมิตรกับสิ่งแวดล้อม';
 					button($title,$text,$img_url,$liff_url,$replyToken);
