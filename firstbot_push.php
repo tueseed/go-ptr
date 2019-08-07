@@ -49,11 +49,11 @@
 	}
 	function push($group_id,$text_alert)
 	{
-		$access_token = 'pwo0kxwpp2MFook0bX8Gr+XR+cOuT5/4mCU2aKFMa5ML5V9PDZAAqaRS5uyPGBC4DS2lkzekn1nT8OBpjE8HPNQqXJm6mBcixaVfmtLm08N1kug5XMgHL4CZAaKXSyOUZumGYOnEOjw7VSx0llzYtgdB04t89/1O/w1cDnyilFU=';
+		$access_token = 'HtkOj0LGq918+vgLfbXs1uF8kM4YsWYmMX1OGIn5THSXsoWwKFGc25QNLxvP4sAV8LpQM446o/uIUbLxOfjm09FDX+73peOuXqHvKttcHLdF0TypLdnjuKl+b61n6vjxrUayj5t8tqdqOtispyKW5wdB04t89/1O/w1cDnyilFU=';
 		//$messages = [ 'type' => 'text','text' => $text_alert];
 		$messages = flex_msg();
 		$url = 'https://api.line.me/v2/bot/message/push';
-        $data = ['to' => $group_id,'messages' => [$messages]];
+        $data = ['to' => 'Ua9ba6c25071c19588c095ec147efe2b1','messages' => [$messages]];
         $post = json_encode($data);
         $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
         $ch = curl_init($url);
