@@ -231,9 +231,9 @@
 				else if($txtin == "การใช้ถังดับเพลิง")
 				{
 					$img_url = 'https://go-ptr.herokuapp.com/images/fire-ext.jpg';
-					$liff_url = 'line://app/1561756390-MxQqjz53';
-					$title ='แบบทดสอบความรู้';
-					$text = 'แบบทดสอบความรู้ของ กฟอ.โพธาราม';
+					$liff_url = 'line://app/1561756390-Gx6RxDdy';
+					$title ='การใช้ถังดับเพลิง';
+					$text = 'ขั้นตอนการใช้ถังดับเพลิง';
 					button($title,$text,$img_url,$liff_url,$replyToken);
 				}
 				// reply_msg($uid,$replyToken);   
