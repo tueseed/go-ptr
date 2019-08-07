@@ -30,7 +30,7 @@ var ctx = document.getElementById('myChart');
                                                                                 ]
                                                                         },
                                                                 options: {
-                                                                            responsive: false,
+                                                                            responsive: true,
                                                                             scales: {
                                                                                 yAxes: [{
                                                                                     ticks: {
@@ -76,7 +76,7 @@ var ctx2 = document.getElementById('myChart2');
                                                                                 ]
                                                                         },
                                                                 options: {
-                                                                            responsive: false,
+                                                                            responsive: true,
                                                                             scales: {
                                                                                 yAxes: [{
                                                                                     ticks: {
@@ -122,7 +122,7 @@ var ctx3 = document.getElementById('myChart3');
                                                                                 ]
                                                                         },
                                                                 options: {
-                                                                            responsive: false,
+                                                                            responsive: true,
                                                                             scales: {
                                                                                 yAxes: [{
                                                                                     ticks: {
