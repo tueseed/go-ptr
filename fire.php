@@ -3,7 +3,7 @@
         <div class="text-center">
             <label class="font-weight-bold bg-light py-2 px-5 shadow-sm" style="font-size:18;border-radius: 20px;color:#cce800;">
                 <i class="fas fa-comment"></i>
-                <span>การใช้ถังดับเพลิง</span>
+                <span>การใช้ถังดับเพลิงและขั้นตอนการอพยพ</span>
             </label>
         </div>
 
