@@ -248,8 +248,8 @@
 				{
 					$img_url = 'https://go-ptr.herokuapp.com/images/mattrakan_templete_res.jpg';
 					$liff_url = 'line://app/1561756390-7mRdM2ND';
-					$title ='สินค้าที่เป็นมิตรกับสิ่งแวดล้อม';
-					$text = 'สินค้าที่เป็นมิตรกับสิ่งแวดล้อม';
+					$title ='มาตรการด้านสิ่งแวเล้อม';
+					$text = 'มาตรการด้านสิ่งแวเล้อม';
 					button($title,$text,$img_url,$liff_url,$replyToken);
 				}
 				// reply_msg($uid,$replyToken);   
