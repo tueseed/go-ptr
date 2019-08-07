@@ -49,7 +49,7 @@
     ////////////////////////////////////////หาวัน
     $d_sever = date("Y-m-d H:i:s");
     echo "<br>date server = ".$d_sever."<br>";
-    $d_thai = date("Y-m-d H:i:s",strtotime('+5 hours')); 
+    $d_thai = date("Y-m-d H:i:s",strtotime('+7 hours')); 
     echo "date thai(+7) = ".$d_thai;
     $dayofweek = date('w', strtotime($d_thai));
     echo "<br>day of week = ".$dayofweek."<br>";
