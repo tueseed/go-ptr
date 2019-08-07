@@ -69,10 +69,10 @@
         {
             send_spacial_msg("ก่อนออกไปทานข้าวอย่าลืมปิดแอร์กันนะครับ..");
         } 
-        send_notify(random_msg());
+        send_notify(random_msg()."(".$d_thai.")");
     }
     
-
+// กลุ่ม พธร.ข่าวสาร  HU3p4oP8dMChXaPbDxNd7WZW2Wu9NvkJuGc6YyjBLHU
     
 
 ?>
