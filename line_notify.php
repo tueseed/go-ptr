@@ -16,9 +16,9 @@
         echo $result . "\r\n";
     }
 
-    function send_hello()
+    function send_spacial_msg($msg1)
     {
-        $notify_message ="สวัสดีตอนเช้าจ้า......";
+        $notify_message = $msg1;
         $access_token = 'V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR';
         $url = 'https://notify-api.line.me/api/notify';
         $headers = array('Content-Type: multipart/form-data', 'Authorization: Bearer ' . $access_token);
@@ -33,22 +33,6 @@
         echo $result . "\r\n";
     }
 
-    function send_close_ac()
-    {
-        $notify_message ="ก่อนออกไปทานข้าวอย่าลืม ปิดแอร์กันด้วยนะจ๊ะ";
-        $access_token = 'V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR';
-        $url = 'https://notify-api.line.me/api/notify';
-        $headers = array('Content-Type: multipart/form-data', 'Authorization: Bearer ' . $access_token);
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, ["message"=>$notify_message]);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-        $result = curl_exec($ch);
-        curl_close($ch);
-        echo $result . "\r\n";
-    }
     
     function random_msg()
     {
@@ -79,11 +63,11 @@
     {
         if($hr == 9)
         {
-            send_hello();
+            send_spacial_msg("สวัสดีตอนเช้าจ้า....");
         }
         if($hr == 11)
         {
-            send_close_ac();
+            send_spacial_msg("ก่อนออกไปทานข้าวอย่าลืมปิดแอร์กันนะครับ..");
         } 
         send_notify(random_msg());
     }
