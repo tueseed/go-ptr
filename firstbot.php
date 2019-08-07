@@ -220,7 +220,15 @@
 					$text = 'ช่องทางการสื่อสารของ กฟอ.โพธาราม';
 					button($title,$text,$img_url,$liff_url,$replyToken);
 				}
-				// reply_msg($uid,$replyToken);      
+				else if($txtin == "แบบทดสอบ")
+				{
+					$img_url = 'https://go-ptr.herokuapp.com/images/test.jpg';
+					$liff_url = 'line://app/1561756390-MxQqjz53';
+					$title ='แบบทดสอบความรู้';
+					$text = 'แบบทดสอบความรู้ของ กฟอ.โพธาราม';
+					button($title,$text,$img_url,$liff_url,$replyToken);
+				}
+				// reply_msg($uid,$replyToken);   
 			}
 		}
 	}
