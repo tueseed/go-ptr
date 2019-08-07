@@ -15,6 +15,40 @@
         curl_close($ch);
         echo $result . "\r\n";
     }
+
+    function send_hello()
+    {
+        $notify_message ="สวัสดีตอนเช้าจ้า......";
+        $access_token = 'V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR';
+        $url = 'https://notify-api.line.me/api/notify';
+        $headers = array('Content-Type: multipart/form-data', 'Authorization: Bearer ' . $access_token);
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, ["message"=>$notify_message]);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        $result = curl_exec($ch);
+        curl_close($ch);
+        echo $result . "\r\n";
+    }
+
+    function send_close_ac()
+    {
+        $notify_message ="ก่อนออกไปทานข้าวอย่าลืม ปิดแอร์กันด้วยนะจ๊ะ";
+        $access_token = 'V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR';
+        $url = 'https://notify-api.line.me/api/notify';
+        $headers = array('Content-Type: multipart/form-data', 'Authorization: Bearer ' . $access_token);
+        $ch = curl_init($url);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, ["message"=>$notify_message]);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+        $result = curl_exec($ch);
+        curl_close($ch);
+        echo $result . "\r\n";
+    }
     
     function random_msg()
     {
@@ -22,7 +56,7 @@
         $msg_ar = array(
                         "อย่าลืม... ตั้งอุณหภูมิเครื่องปรับอากาศที่ 25 องศา ช่วยทำให้ลดการใช้พลังงานไฟฟ้าได้นาจา",
                         "ขับรถที่ 80 กม./ชั่วโมง ช่วยประหยัดน้ำมันได้",
-                        "พลักงงานนั้นมีค่ารู้รักษาก่อนหมดไป ถอดปลั๊กเมื่อไม่ใช้ ประหยัดไฟ ประหยัดตัง",
+                        "พลังงานนั้นมีค่ารู้รักษาก่อนหมดไป ถอดปลั๊กเมื่อไม่ใช้ ประหยัดไฟ ประหยัดตัง",
                         "น้ำและไฟมีจำกัด ควรประหยัดรู้คุณค่า ป่าไม้มีราคา ร่วมรักษาอย่าทำลาย"
         );
         return $msg_ar[$number];
@@ -37,10 +71,20 @@
     echo "<br>day of week = ".$dayofweek."<br>";
 
     $hr = date('h',strtotime($d_thai));
-    echo "hr = ".$hr;
+    $mn = date('i',strtotime($d_thai));
+    echo "hr = ".$hr."<br>";
+    echo "mn = ".$mn."<br>";
     ////////////////////////////////////////
     if($dayofweek > 0 && $dayofweek < 6 && $hr > 8 && $hr < 17)
     {
+        if($hr == 9)
+        {
+            send_hello();
+        }
+        if($hr == 11)
+        {
+            send_close_ac();
+        } 
         send_notify(random_msg());
     }
     
