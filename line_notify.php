@@ -1,8 +1,9 @@
 <?php
-    function send_notify($msg)
+    $group_id_ar = array("V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR","HU3p4oP8dMChXaPbDxNd7WZW2Wu9NvkJuGc6YyjBLHU");
+    function send_notify($msg,$group_id)
     {
         $notify_message = $msg;
-        $access_token = 'V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR';
+        $access_token = $group_id;
         $url = 'https://notify-api.line.me/api/notify';
         $headers = array('Content-Type: multipart/form-data', 'Authorization: Bearer ' . $access_token);
         $ch = curl_init($url);
@@ -16,10 +17,10 @@
         echo $result . "\r\n";
     }
 
-    function send_spacial_msg($msg1)
+    function send_spacial_msg($msg1,$group_id)
     {
         $notify_message = $msg1;
-        $access_token = 'V2FWDWvMAziTgaiPpWOsJ9CGDeVYGkhzYdtHMhh33lR';
+        $access_token = $group_id;
         $url = 'https://notify-api.line.me/api/notify';
         $headers = array('Content-Type: multipart/form-data', 'Authorization: Bearer ' . $access_token);
         $ch = curl_init($url);
@@ -61,21 +62,27 @@
     ////////////////////////////////////////
     if($dayofweek > 0 && $dayofweek < 6 && $hr > 8 && $hr < 17)
     {
-        if($hr == 9)
+        
+        foreach($group_id_ar as $group_id)
         {
-            send_spacial_msg("สวัสดีตอนเช้าจ้า....");
+            if($hr == 9)
+            {
+                send_spacial_msg("สวัสดีตอนเช้าจ้า....",$group_id);
+            }
+            if($hr == 11)
+            {
+                send_spacial_msg("ก่อนออกไปทานข้าวอย่าลืมปิดแอร์กันนะครับ..",$group_id);
+            }
+            if($hr == 16)
+            {
+                send_spacial_msg("ใกล้เลิกงานแล้วปิดแอร์ก่อนก็ดีนะ.....",$group_id);
+            }  
+            send_notify(random_msg()."(".$d_thai.")",$group_id);
+            echo $group_id;
         }
-        if($hr == 11)
-        {
-            send_spacial_msg("ก่อนออกไปทานข้าวอย่าลืมปิดแอร์กันนะครับ..");
-        }
-        if($hr == 16)
-        {
-            send_spacial_msg("ใกล้เลิกงานแล้วปิดแอร์ก่อนก็ดีนะ.....");
-        }  
-        send_notify(random_msg()."(".$d_thai.")");
+        
     }
-    
+ 
 // กลุ่ม พธร.ข่าวสาร  HU3p4oP8dMChXaPbDxNd7WZW2Wu9NvkJuGc6YyjBLHU
     
 
