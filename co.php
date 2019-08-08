@@ -9,7 +9,7 @@
 
         <p style="font-size:16px;" class="font-weight-bold  mt-2"> 
             <span class="pl-1" >
-            1.ปริมาณการใช้น้ำมันเชื้อเพลิง(ลิตร)
+            ปริมาณการใช้น้ำมันเชื้อเพลิง(ลิตร)
             </span>
         </p>
         
@@ -17,14 +17,14 @@
 
         <p style="font-size:16px;" class="font-weight-bold  mt-2"> 
             <span class="pl-1" >
-            2.ปริมาณการใช้น้ำ(หน่วย)
+            ปริมาณการใช้น้ำ(หน่วย)
             </span>
         </p>
         <canvas id="myChart2" style="height:40vh; width:80vw"></canvas>
 
         <p style="font-size:16px;" class="font-weight-bold  mt-2"> 
             <span class="pl-1" >
-            3.ปริมาณการใช้ไฟฟ้า(หน่วย)
+            ปริมาณการใช้ไฟฟ้า(หน่วย)
             </span>
         </p>
         <canvas id="myChart3" style="height:40vh; width:80vw"></canvas>
