@@ -85,7 +85,7 @@
             {
                 send_spacial_msg("ใกล้เลิกงานแล้วปิดแอร์ก่อนก็ดีนะ.....",$group_id);
             }  
-            send_notify(random_msg()."(".$d_thai.")",$group_id);
+            send_notify(random_msg(),$group_id);
             echo $group_id;
         }
         
